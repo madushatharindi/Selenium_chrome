@@ -42,7 +42,6 @@ public class LinkTest {
         }
         driver.navigate().back();
 
-
 //        Duplicate link
         WebElement homeLink1 = driver.findElement(By.linkText("Go to Dashboard"));
         homeLink1.click();
