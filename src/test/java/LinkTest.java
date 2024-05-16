@@ -30,9 +30,11 @@ public class LinkTest {
         String path = wheretoGo.getAttribute("href");
         System.out.println("This link is going to:"+path);
 
+
 //        am I broken link
         WebElement brokenLink = driver.findElement(By.linkText("Broken?"));
         brokenLink.click();
+
 
         String title = driver.getTitle();
         if (title.contains("404")){
@@ -41,6 +43,7 @@ public class LinkTest {
             System.out.println("Not broken");
         }
         driver.navigate().back();
+
 
 //        Duplicate link
         WebElement homeLink1 = driver.findElement(By.linkText("Go to Dashboard"));
