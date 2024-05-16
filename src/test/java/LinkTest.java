@@ -35,7 +35,6 @@ public class LinkTest {
         WebElement brokenLink = driver.findElement(By.linkText("Broken?"));
         brokenLink.click();
 
-
         String title = driver.getTitle();
         if (title.contains("404")){
             System.out.println("The link is broken");
@@ -43,7 +42,6 @@ public class LinkTest {
             System.out.println("Not broken");
         }
         driver.navigate().back();
-
 
 //        Duplicate link
         WebElement homeLink1 = driver.findElement(By.linkText("Go to Dashboard"));
