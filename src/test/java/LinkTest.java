@@ -52,7 +52,6 @@ public class LinkTest {
         int pageLinkCount = countfullpageLinks.size();
         System.out.println("Count of full page links" +pageLinkCount);
 
-
 //        count logouts
         WebElement layoutElement= driver.findElement(By.className("layout-main-content"));
         List<WebElement> countOfLayoutLinks = layoutElement.findElements(By.tagName("a"));
