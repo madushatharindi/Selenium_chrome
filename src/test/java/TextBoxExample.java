@@ -14,7 +14,7 @@ public class TextBoxExample {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.leafground.com/input.xhtml;jsessionid=node030g192q2gewvsio734jy01jd968053.node0");
-        Thread.sleep(3000);
+
     }
 
     @Test
